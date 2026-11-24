@@ -1,0 +1,209 @@
+{
+  "training_size": 30,
+  "test_size": 15,
+  "metrics": {
+    "keywords": {
+      "考试": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3.0
+      },
+      "竞赛": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 3.0
+      },
+      "课程": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.8,
+        "support": 3.0
+      },
+      "活动": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "事务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "micro avg": {
+        "precision": 0.8888888888888888,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.6666666666666667,
+        "support": 15.0
+      },
+      "macro avg": {
+        "precision": 0.55,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.5314285714285715,
+        "support": 15.0
+      },
+      "weighted avg": {
+        "precision": 0.55,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.5314285714285715,
+        "support": 15.0
+      },
+      "accuracy": 0.5333333333333333
+    },
+    "tfidf_logistic": {
+      "考试": {
+        "precision": 0.42857142857142855,
+        "recall": 1.0,
+        "f1-score": 0.6,
+        "support": 3.0
+      },
+      "竞赛": {
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.5714285714285715,
+        "support": 3.0
+      },
+      "课程": {
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "f1-score": 0.4,
+        "support": 3.0
+      },
+      "活动": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "事务": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "accuracy": 0.4,
+      "macro avg": {
+        "precision": 0.2857142857142857,
+        "recall": 0.39999999999999997,
+        "f1-score": 0.31428571428571433,
+        "support": 15.0
+      },
+      "weighted avg": {
+        "precision": 0.2857142857142857,
+        "recall": 0.4,
+        "f1-score": 0.3142857142857143,
+        "support": 15.0
+      }
+    }
+  },
+  "cases": [
+    {
+      "group": "考试-3",
+      "source": "教务处",
+      "expected": "考试",
+      "keywords": "考试",
+      "tfidf_logistic": "考试"
+    },
+    {
+      "group": "考试-6",
+      "source": "教学运行保障中心",
+      "expected": "考试",
+      "keywords": "考试",
+      "tfidf_logistic": "考试"
+    },
+    {
+      "group": "考试-9",
+      "source": "研究生院",
+      "expected": "考试",
+      "keywords": "考试",
+      "tfidf_logistic": "考试"
+    },
+    {
+      "group": "竞赛-3",
+      "source": "理学院科创部",
+      "expected": "竞赛",
+      "keywords": "竞赛",
+      "tfidf_logistic": "考试"
+    },
+    {
+      "group": "竞赛-6",
+      "source": "计算机学院科创协会",
+      "expected": "竞赛",
+      "keywords": "竞赛",
+      "tfidf_logistic": "竞赛"
+    },
+    {
+      "group": "竞赛-9",
+      "source": "经管学院",
+      "expected": "竞赛",
+      "keywords": "竞赛",
+      "tfidf_logistic": "竞赛"
+    },
+    {
+      "group": "课程-3",
+      "source": "教务处",
+      "expected": "课程",
+      "keywords": "课程",
+      "tfidf_logistic": "事务"
+    },
+    {
+      "group": "课程-6",
+      "source": "任课教师",
+      "expected": "课程",
+      "keywords": "课程",
+      "tfidf_logistic": "课程"
+    },
+    {
+      "group": "课程-9",
+      "source": "任课教师",
+      "expected": "课程",
+      "keywords": "待确认",
+      "tfidf_logistic": "考试"
+    },
+    {
+      "group": "活动-3",
+      "source": "体育部",
+      "expected": "活动",
+      "keywords": "待确认",
+      "tfidf_logistic": "事务"
+    },
+    {
+      "group": "活动-6",
+      "source": "学生会新媒体部",
+      "expected": "活动",
+      "keywords": "竞赛",
+      "tfidf_logistic": "竞赛"
+    },
+    {
+      "group": "活动-9",
+      "source": "辩论社",
+      "expected": "活动",
+      "keywords": "待确认",
+      "tfidf_logistic": "竞赛"
+    },
+    {
+      "group": "事务-3",
+      "source": "学生事务中心",
+      "expected": "事务",
+      "keywords": "待确认",
+      "tfidf_logistic": "考试"
+    },
+    {
+      "group": "事务-6",
+      "source": "信息化中心",
+      "expected": "事务",
+      "keywords": "待确认",
+      "tfidf_logistic": "课程"
+    },
+    {
+      "group": "事务-9",
+      "source": "科研实验室管理办公室",
+      "expected": "事务",
+      "keywords": "待确认",
+      "tfidf_logistic": "考试"
+    }
+  ]
+}

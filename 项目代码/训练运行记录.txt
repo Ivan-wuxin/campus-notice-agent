@@ -1,0 +1,16 @@
+$ python train_classifier.py notices.jsonl
+keywords: accuracy=0.533, macro F1=0.531
+tfidf_logistic: accuracy=0.400, macro F1=0.314
+exit_code=0
+
+$ python extend_training.py 
+
+exit_code=0
+
+新增训练集三折交叉验证结果
+full_svm_c1              correct=14/30 accuracy=0.467 macro_F1=0.413
+full_svm_c5              correct=19/30 accuracy=0.633 macro_F1=0.636
+full_complement_nb       correct=21/30 accuracy=0.700 macro_F1=0.696
+title_svm_c1             correct=19/30 accuracy=0.633 macro_F1=0.604
+title_svm_c5             correct=19/30 accuracy=0.633 macro_F1=0.604
+title_complement_nb      correct=16/30 accuracy=0.533 macro_F1=0.488
